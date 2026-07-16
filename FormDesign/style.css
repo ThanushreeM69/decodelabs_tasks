@@ -1,0 +1,123 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    }
+
+    body{
+        min-height:100vh;
+        background:linear-gradient(135deg,#6c63FF,#A855F7,#EC4899,#F97316);
+        background-size:300% 300%;
+        animation:gradientMove 10s ease infinite;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        padding:20px;
+    }
+
+    .form-box{
+        width:470px;
+        padding:35px;
+        background:rgba(255,255,255,.15);
+        backdrop-filter:blur(18px);
+        border-radius:25px;
+        border:1px solid rgba(255,255,255,.25);
+        box-shadow:0 15px 40px rgba(0,0,0,.25);
+    }
+
+    .form-box h2{
+        text-align:center;
+        margin-bottom:25px;
+        color:#333;
+    }
+
+    .input-box{
+        margin-bottom:18px;
+    }
+
+    .input-box label{
+        display:block;
+        font-weight:600;
+        margin-bottom:6px;
+        color:#444;
+    }
+
+    .input-box input{
+        width:100%;
+        padding:12px;
+        border:2px solid #ddd;
+        border-radius:8px;
+        font-size:15px;
+        transition:.3s;
+    }
+
+    .input-box input:focus{
+        outline:none;
+        border-color:#4facfe;
+    }
+
+    .input-box.success input{
+        border-color:#28a745;
+    }
+
+    .input-box.error input{
+        border-color:#dc3545;
+    }
+
+    .input-box small{
+        color:#dc3545;
+        font-size:13px;
+        margin-top:5px;
+        display:block;
+    }
+
+    .strength{
+        width:100px;
+        height:8px;
+        background:#ddd;
+        border-radius:10px;
+        margin-top:10px;
+        overflow:hidden;
+    }
+
+    #strengthBar{
+        height:100%;
+        width:0%;
+        transition:.4s;
+    }
+
+    #strengthText{
+        margin-top:6px;
+        font-size:14px;
+        font-weight:600;
+    }
+
+    button{
+        background:linear-gradient(45deg,#FF6B6B,#FF8E53);
+        font-weight:bold;
+        letter-spacing:1px;
+        border-radius:12px;
+        transition:.4s;
+    }   
+    
+    button:hover{
+        transform:translateY(-4px) scale(1.03);
+        box-shadow:0 12px 25px rgba(0,0,0,.3);
+    }
+
+    #successMessage{
+        margin-top:20px;
+        text-align:center;
+        color:#28a745;
+        font-size:18px;
+        font-weight:bold;
+        
+    }
+
+    @media(max-width:500px){
+        .form-box{
+            width:100%;
+            padding:25px;
+        }
+    }
