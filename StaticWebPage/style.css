@@ -1,0 +1,173 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Poppons,sans-serif;
+}
+
+body{
+    background:#050816;
+    color:white;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-item:center;
+    padding:20px 10%;
+    width:100%;
+    background:rgba(0,0,0,.5)
+    backdrop-filter:blur(10px);
+}
+
+.logo{
+    font-size:28;
+    font-weight:700;
+    color:#8b5cf6;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    transition:3s;
+}
+
+.nav-links a:hover{
+    color:#8b5cf6;
+}
+
+.hero{
+    height:100vh;
+    background:url("spacee.jpeg")center/cover;
+    display:flex;
+    align-item:center;
+    padding-left:10;
+}
+
+.hero h1{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    width:500px;
+    font-size:20px;
+    line-height:1.8;
+}
+
+.hero button{
+    margin-top:30px;
+    padding:15px;
+    border:none;
+    background:#8b5cf6;
+    color:white;
+    border-radius::30px;
+    font-size:18px ;
+    cursor:pointer;
+    transition:3s;
+}
+
+.hero button:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:100px 10%;
+}
+
+h2{
+    font-size:42px;
+    margin-bottom:40px;
+    color:#8b5cf6;
+}
+
+.cards{
+    display:grid;
+    grid-templete-columns:repeat(auto-fit.minmax(220px 1fr));
+    gap:30px;
+}
+
+.card{
+    background:#111827;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.card.hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.massion-grid{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+
+.mission{
+    background:#111827;
+    padding:30px;
+    border-radius:15px;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.gallery-grid img{
+    width:100%;
+    border-radius:12px;
+}
+
+.fact-box{
+    background:#111827;
+    padding:30px;
+    border-radius:15px;
+}
+
+.fact-box p{
+    margin:15px 0;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    max-width:600px;
+}
+
+input.textarea{
+    padding:15px;
+    border:none;
+    border-radius:10px;
+}
+
+button{
+    padding:15px;
+    border:none;
+    background:#8b5cf6;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+    border-radius:10px;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#111827;
+}
