@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+    
+    <div class="container">
+        <!-----SIDEBAR------->
+
+        <aside class="sidebar">
+
+            <h2 class="Logo">
+                StudySphere
+            </h2>
+
+            <ul>
+                <li class="active">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </li>
+
+                <li>
+                    <i class="fas fa-calendar"></i>
+                    Planner
+                </li>
+
+                <li>
+                    <i class="fas fa-book"></i>
+                    Subjects
+                </li>
+
+                <li>
+                    <i class="fas fa-clock"></i>
+                    Focus Timer
+                </li>
+
+                <li>
+                    <i class="fas fa-note-sticky"></i>
+                    Notes
+                </li>
+
+                <li>
+                    <i class="fas fa-gear"></i>
+                    Settings
+                </li>
+            </ul>
+        </aside>
+          <main>
+        <header>
+
+            <div>
+                <h1 id="greeting">
+                    Good Morning🌅
+                </h1>
+
+                <p id="date">
+                    Monday,June 30
+                </p>
+            </div>
+
+            <div class="header-right">
+
+                <h2 id="clock">
+                    10:30 AM
+                </h2>
+            </div>
+        </header>
+
+        <section class="dashboard">
+        <div class="card">
+            <h2>Today's Goal🎯</h2>
+
+            <p>
+                Complete
+                <strong>5 Tasks</strong>
+            </p>
+
+            <progress value="60%"max="100"></progress>
+
+            <p>
+                60% Completed
+            </p>
+
+        </div>
+
+        <div class="card">
+            <h2>Daily Motivation</h2>
+            <p id="quote">
+                "Success doesn't come from what you do occasionally.
+                It comes from what you do consistently."
+            </p>
+
+            <button id="newQuote">
+                New Quote
+            </button>
+        </div>
+
+        <div class="card">
+            <h2> Pomodoro Timer⏳</h2>
+            <h1 id="timer">25:00</h1>
+
+            <div class="timer-buttons">
+                <button id="startBtn">Start</button>
+
+                <button id="pauseBtn">Pause</button>
+
+                <button id="resetBtn">Reset</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Appearance</h2>
+            <button id="darkMode">
+                Dark Mode
+            </button>
+
+            <div class="themes">
+                <button class="theme purple"></button>
+                <button class="theme blue"></button>
+                <button class="theme green"></button>
+                <button class="theme orange"></button>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2> Upcoming Task</h2>
+            <h3>
+                Frontend Project
+            </h3>
+            <p>
+                Deadline:
+                tomorrow
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Study Stats📊</h2>
+
+            <p>
+                Tasks Completed : 
+                <span id="tasks">
+                    18
+                </span>
+            </p>
+
+            <p>
+                Current Streak :
+                <span id="streak">
+                    7 Days
+                </span>
+            </p>
+
+            <p>
+                Study Hours :
+                <span id="hours">
+                    42 hrs
+                </span>
+            </p>
+        </div>
+
+
+        <div class="card">
+            <h2>
+                To-Do List📌
+            </h2>
+
+            <p>
+                Coming in Part 2
+            </p>
+        </div>
+
+        <div class="cards">
+
+            <h2>Mood Tracker</h2>
+         <div class="moods">
+            <button>🙂</button>
+            <button>😁</button>
+            <button>😐</button>
+            <button>😴</button>
+            </div>
+        </div>
+    </div>
+</section>
+</main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
